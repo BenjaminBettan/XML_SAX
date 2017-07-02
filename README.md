@@ -2,7 +2,7 @@
 Parse huge xml files
 
 
-Should print :
+Should work on linux and windows, it should print :
 
 2017-07-02_20:48:15|INFO |                        main> Start init;
 
