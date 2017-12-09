@@ -1,6 +1,8 @@
 # XML_SAX
 
-Parse huge xml files by creating serialized entities for each tag detected by SAX API.
+Able to parse huge xml files by creating serialized entities for each tag detected by SAX API.
+
+You can update the entry file as well.
 
 Entry file for example :
 
@@ -22,20 +24,13 @@ just edit executeScenario method in the class below, it's an example, it should 
 
 
 package m;
-
-
 public class SubMain extends SubMain_A{
-		
 	public void run(String[] args) {
-		
 		init(args);
-		
 		executeScenario();
-		
 	}
 
 	private void executeScenario() {
-		
 		logger.info("Let's run a scenario !");
 		
 		for (long i = 0; i < NB_INSTANCE; i++) 
@@ -47,17 +42,8 @@ public class SubMain extends SubMain_A{
 		
 		logger.info("Show me value 5 in xml : "+ x.getEntity(5).showXmlValue());
 		
-		logger.info( "End of program" );
-		
 	}
-	
-
 }
-
-
-
-
-
 
 
 
@@ -94,5 +80,3 @@ XMLEntity [id=6, level=3, tag=r1_4_1, data=aaa, leaf=true, isChildOf=5, attribut
 Print XML : <?xml version="1.0" encoding="UTF-8" ?><r0 ttt="b" id="a"><r1 y="d" z="c"><r1_1>aa</r1_1><r1_2>bb</r1_2><r1_3>cc</r1_3><r1_4 w="f" x="e"><r1_4_1>aaa</r1_4_1></r1_4></r1></r0>;
 
 Show me value 5 in xml : <r1_4 w="f" x="e"><r1_4_1>aaa</r1_4_1></r1_4>;
-
-End of program;
