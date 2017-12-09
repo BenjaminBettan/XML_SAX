@@ -24,13 +24,19 @@ just edit executeScenario method in the class below, it's an example, it should 
 
 
 package m;
+
 public class SubMain extends SubMain_A{
+
 	public void run(String[] args) {
+	
 		init(args);
+		
 		executeScenario();
+		
 	}
 
 	private void executeScenario() {
+	
 		logger.info("Let's run a scenario !");
 		
 		for (long i = 0; i < NB_INSTANCE; i++) 
