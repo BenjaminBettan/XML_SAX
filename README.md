@@ -5,7 +5,7 @@ Able to parse huge xml files by creating serialized entities for each tag detect
 You can update the entry file as well.
 
 Entry file for example :
-
+<!-->
 <?xml version="1.0" encoding="UTF-8" ?>
 <r0 id="a" ttt="b">
 	<r1 z="c" y="d">
@@ -18,7 +18,7 @@ Entry file for example :
 	</r1>
 	
 </r0>
-
+<--!>
 
 just edit executeScenario method in the class below, it's an example, it should show how to use it
 
